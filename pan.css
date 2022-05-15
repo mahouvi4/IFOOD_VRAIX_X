@@ -1,0 +1,110 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url('ifood11.jpg') center repeat-y;
+            background-size: cover;
+            height: 100vh;
+            margin-top: 200px;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            /*font-family: "aharoni", Times, serif;*/
+        }
+        
+        .card {
+            max-width: 900px;
+            border: 1px solid #00bcd4;
+            opacity: 2;
+            padding: 15px;
+            overflow: auto;
+            margin: auto;
+            border-radius: 4px;
+            backdrop-filter: blur(12px);
+            position: absolute;
+            height: 400px;
+        }
+        
+        table {
+            width: 100%;
+            font-size: 13px;
+            white-space: nowrap;
+            border-collapse: collapse;
+        }
+        
+        table>thead {
+            background: linear-gradient(315deg, #03a9f4, #000000, #ff0058);
+        }
+        
+        table>thead th {
+            padding: 15px;
+        }
+        
+        table th,
+        table td {
+            border: 1px solid #00000017;
+            padding: 10px 15px;
+        }
+        
+        table>tbody>tr>td>img {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 12px #ff0058;
+        }
+        
+        .action_btn {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .action_btn button>a {
+            width: 70px;
+            text-decoration: none;
+            color: #444;
+            background: linear-gradient(315deg, #03a9f4, #000000);
+            border: 1px solid;
+            display: inline-block;
+            padding: 7px 20px;
+            font-weight: bold;
+            border-radius: 3px;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .action_btn>a:nth-child(1) {
+            border-color: #26a69a;
+            color: #ff0058;
+        }
+        
+        .action_btn>a:nth-child(2) {
+            border-color: #fff;
+            color: #ffbc00;
+        }
+        
+        .action_btn>a:hover {
+            box-shadow: 0 3px 15px #fff;
+        }
+        
+        table>tbody>tr {
+            transition: 0.3s ease-in-out;
+        }
+        
+        table>tbody>tr:nth-child(even) {
+            background: linear-gradient(315deg, #000000, #26a69a, #000000);
+        }
+        
+        table>tbody>tr:hover {
+            filter: drop-shadow(0px 2px 6px #ff0058);
+        }
+        
+        table>tbody>tr:nth-child(even) {
+            background-color: linear-gradient(315deg, #000000, #8e9998, #000000);
+        }
+        
+        table>tbody>tr:hover {
+            filter: drop-shadow(0px 2px 6px #fff);
+        }
